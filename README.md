@@ -75,7 +75,7 @@ frontend
     views/               contains view files for the Web application
     web/                 contains the entry script and Web resources
     widgets/             contains frontend widgets
-apiend			 contains restful Api for Application
+apiend			         contains restful Api for Application
     assets/              contains application assets such as JavaScript and CSS
     config/              contains frontend configurations
     controllers/         contains Web controller classes
@@ -85,13 +85,13 @@ apiend			 contains restful Api for Application
 tpl                      contains frontend view files ,Web resources and application assets
     default/
         statics/         contains Web resources
-	views/		 contains view files for the Web application
-	web/             contains application assets such as JavaScript and CSS
-tpladmin		 contains backend view files ,Web resources and application assets
+	views/		         contains view files for the Web application
+	web/                 contains application assets such as JavaScript and CSS
+tpladmin		         contains backend view files ,Web resources and application assets
     defalut/
-	statics/         contains Web resources
-	views/		 contains view files for the Web application
-	web/             contains application assets such as JavaScript and CSS
+	statics/             contains Web resources
+	views/		         contains view files for the Web application
+	web/                 contains application assets such as JavaScript and CSS
 storage                  contains file upload resources
 vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
