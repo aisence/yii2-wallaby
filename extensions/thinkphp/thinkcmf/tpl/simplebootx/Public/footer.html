@@ -1,0 +1,62 @@
+<br><br><br>
+<!-- Footer
+      ================================================== -->
+<span style="font-size:16px;">友情链接</span>
+      <hr>
+{:hook('footer')}
+    <!--  <div id="footer">
+        <div class="links">
+        <php>$links=sp_getlinks();</php>
+        <foreach name="links" item="vo">
+          <a href="{$vo.link_url}" target="{$vo.link_target}">{$vo.link_name}</a>
+        </foreach>
+        </div>
+        <p>
+        Made by <a href="http://www.thinkcmf.com">ThinkCMF</a>
+        Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" rel="nofollow" target="_blank">Apache License v2.0</a>.<br/>
+        Based on <a href="http://getbootstrap.com/2.3.2/" target="_blank">Bootstrap</a>.  Icons from <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">Font Awesome</a>
+        </p>
+      </div>
+      <div id="backtotop"><i class="fa fa-arrow-circle-up"></i></div>-->
+<div id="footer">
+    <div class="links">
+        <php>$links=sp_getlinks();</php>
+        <foreach name="links" item="vo">
+            <a href="{$vo.link_url}" target="{$vo.link_target}">{$vo.link_name}</a>
+        </foreach>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="span4">
+            <div style="float:left;width:195px;height:90px;padding:5px 5px;border-left:1px #CCC solid;border-right:1px #CCC solid">
+                <div style="text-align:center;float:left"><img src="__TMPL__Public/images/wb.png" border=0><br/>官方微博</div>
+                <div style="text-align:center;float:left"><img src="__TMPL__Public/images/wx.png" border=0><br/>官方微信</div>
+            </div>
+            <div style="float:left;margin:10px 20px 10px 20px">
+                <a href="javascript:;"><img src="__TMPL__Public/images/kxwz.png" border=0 id="fb1"></a><br/><br/>
+                <a href="javascript:;"><img src="__TMPL__Public/images/cxwz.png" border=0 id="fb2"></a>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <div class="span7">
+            <div class="links">
+                <div style="margin-top:10px;">
+<!--                    <a href="javascript:;" target="_blank">关于华融</a>
+                    | <a href="javascript:;" target="_blank">业务平台</a>
+                    | <a href="javascript:;" target="_blank">联系我们</a>
+                    | <a href="javascript:;" target="_blank">法律声明</a>
+                    | <a href="javascript:;" target="_blank">服务理念</a>
+                    | <a href="javascript:;" target="_blank">客户服务</a>
+                    | <a href="javascript:;" target="_blank">常见问题</a>
+                    | <a href="javascript:;" target="_blank">在线留言</a>-->
+                </div><div style="margin-top:12px;">
+                地址：宁波海曙区车轿街69号恒泰大厦16楼
+            </div><div  style="margin-top:12px;">
+                版权所有：华融普惠资产管理有限公司 Copyright©2015 浙ICP备13032296号-1</div>
+            </div>
+        </div>
+    </div>
+    <div id="backtotop"><i class="fa fa-arrow-circle-up"></i></div>
+
+</div>
+      {$site_tongji}

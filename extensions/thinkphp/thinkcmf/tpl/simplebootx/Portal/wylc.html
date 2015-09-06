@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$name} {$seo_title} {$site_name}</title>
+    <meta name="keywords" content="{$seo_keywords}" />
+    <meta name="description" content="{$seo_description}">
+    <tc_include file="Public:head" />
+</head>
+<body class="body-white">
+<tc_include file="Public:nav" />
+
+<div class="container">
+    <div style="height:12px;margin-top:40px;background-image:url(__TMPL__Public/images/tp.png); background-repeat:repeat-x">
+    <div style="width:100px; text-align:center;font-size:20px;color:#00a0e9;position:absolute; background-color:#FFF;left:50%;margin-left:-60px;">我要理财</div>
+    </div>
+    <div style="border:2px #d8d8d8 solid; border-top:0px;text-align:center;">
+    <div style="position:relative;margin:auto;padding:50px 0px;">
+    <a href="javascript:;" onClick="change(1)"><img src="__TMPL__Public/images/hmn.png" border=0></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="javascript:;" onClick="change(2)"><img src="__TMPL__Public/images/yyy.png" border=0></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="javascript:;" onClick="change(3)"><img src="__TMPL__Public/images/jly.png" border=0></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="javascript:;" onClick="change(4)"><img src="__TMPL__Public/images/jdf.png" border=0></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="javascript:;" onClick="change(5)"><img src="__TMPL__Public/images/cfb.png" border=0></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="javascript:;" onClick="change(6)"><img src="__TMPL__Public/images/phxl.png" border=0></a>
+    </div>
+    </div>
+    <!--
+	<div class="row">
+		<div class="span4">
+			<a href="javascript:;"><img src="file/wylc.png" border=0></a>
+		</div>
+		<div class="span4">
+			<a href="javascript:;"><img src="file/wyjd.png" border=0></a>
+		</div>
+		<div class="span4">
+			<a href="javascript:;"><img src="file/gsdt.png" border=0></a>
+		</div>
+	</div>
+    -->
+    <div style="height:12px;margin-top:20px;background-image:url(__TMPL__Public/images/mp.png); background-repeat:repeat-x">
+    <div id="c1" style="padding:20px 40px;border:2px #d8d8d8 solid; border-top:0px;margin-bottom:40px;color:#000">
+    <div style="font-size:18px;color:#00a0e9">项目详情</div>
+    <div style="padding:20px 40px;color:#6c6e6c">“惠满年”是华融财富为您量身打造的P2P理财服务模式。您可以通过华融平台的推荐，将手中的富余资金出借给信用良好但缺少资金的大学生、工薪阶层、微小企业主、农民，帮助他们实现教育培训、家电购买、装修、兼职创业等理想。起投金额5万元，在获得预期年化收益率13%的同时，还实现了巨大的社会价值。</div>
+    <div style="border:1px #CCC dashed;margin-bottom:20px;"></div>
+    <div style="font-size:16px;color:#7bdcf6;">适用人群</div>
+    <div style="padding:20px 40px;color:#6c6e6c">适用于有闲置资金的理财人群，将资金最大程度利用起来，获得理想年化收益，实现资产增值。</div>
+    <div style="border:1px #CCC dashed;margin-bottom:20px;"></div>
+    <div style="font-size:16px;color:#7bdcf6">起投金额</div>
+    <div style="padding:20px 40px;color:#6c6e6c">起投金额5万，期限1年，预期13%年化收益率，到期一次性支付全部本息</div>
+    </div>
+    
+    <div id="c2" style="padding:20px 40px;border:2px #d8d8d8 solid; border-top:0px;margin-bottom:40px;color:#000; display:none">
+    <div style="font-size:18px;color:#00a0e9">项目详情</div>
+    <div style="padding:20px 40px;color:#6c6e6c">“月月赢”是华融财富推出的按月回收收益的理财服务模式。本金选择继续出借，利息按月回收，起投金额5万元，预期年化收益率12%。</div>
+    <div style="border:1px #CCC dashed;margin-bottom:20px;"></div>
+    <div style="font-size:16px;color:#7bdcf6;">适用人群</div>
+    <div style="padding:20px 40px;color:#6c6e6c">适用于有闲置资金的理财人群，将资金较大程度利用起来，每月获得可观收益，实现资产增值。</div>
+    <div style="border:1px #CCC dashed;margin-bottom:20px;"></div>
+    <div style="font-size:16px;color:#7bdcf6">起投金额</div>
+    <div style="padding:20px 40px;color:#6c6e6c">起投金额5万，期限1年，预期12%年化收益率，每月付息</div>
+    </div>
+    
+    <div id="c3" style="padding:20px 40px;border:2px #d8d8d8 solid; border-top:0px;margin-bottom:40px;color:#000; display:none">
+    <div style="font-size:18px;color:#00a0e9">项目详情</div>
+    <div style="padding:20px 40px;color:#6c6e6c">“金六月”是华融财富为您推出具有较高资金流动性的理财服务模式，期限为6个月，起投金额5万元，预期年化收益率10.6%，到期一次性支付本息。</div>
+    <div style="border:1px #CCC dashed;margin-bottom:20px;"></div>
+    <div style="font-size:16px;color:#7bdcf6;">适用人群</div>
+    <div style="padding:20px 40px;color:#6c6e6c">适用于当前有闲置资金，但一段时间后将有使用需求的理财人群，将资金在其闲置时间内进行利用，实现资产增值。</div>
+    <div style="border:1px #CCC dashed;margin-bottom:20px;"></div>
+    <div style="font-size:16px;color:#7bdcf6">起投金额</div>
+    <div style="padding:20px 40px;color:#6c6e6c">起投金额5万，期限6个月，预期10.6%年化收益率，到期一次性支付本息</div>
+    </div>
+    
+    <div id="c4" style="padding:20px 40px;border:2px #d8d8d8 solid; border-top:0px;margin-bottom:40px;color:#000; display:none">
+    <div style="font-size:18px;color:#00a0e9">项目详情</div>
+    <div style="padding:20px 40px;color:#6c6e6c">“季度丰”是华融财富为您推出具有较高资金流动性的理财服务模式，期限为3个月，起投金额5万元，预期年化收益率8.9%，到期一次性支付本息。</div>
+    <div style="border:1px #CCC dashed;margin-bottom:20px;"></div>
+    <div style="font-size:16px;color:#7bdcf6;">适用人群</div>
+    <div style="padding:20px 40px;color:#6c6e6c">适用于当前有闲置资金，但一段时间后将有使用需求的理财人群，将资金在其闲置时间内进行利用，实现资产增值。</div>
+    <div style="border:1px #CCC dashed;margin-bottom:20px;"></div>
+    <div style="font-size:16px;color:#7bdcf6">起投金额</div>
+    <div style="padding:20px 40px;color:#6c6e6c">起投金额5万， 期限3个月， 预期8.9%年化收益率， 到期一次性支付全部本息</div>
+    </div>
+    
+    <div id="c5" style="padding:20px 40px;border:2px #d8d8d8 solid; border-top:0px;margin-bottom:40px;color:#000; display:none">
+    <div style="font-size:18px;color:#00a0e9">项目详情</div>
+    <div style="padding:20px 40px;color:#6c6e6c">“财富宝”是华融财富为您推出的一个低门槛、期限灵活的理财模式，预期年化收益率7.8%，快速助您的财富增长。</div>
+    <div style="border:1px #CCC dashed;margin-bottom:20px;"></div>
+    <div style="font-size:16px;color:#7bdcf6;">模式亮点</div>
+    <div style="padding:20px 40px;color:#6c6e6c">期限为1-12个月灵活的理财模式，起投金额5万元，预期年化收益率7.8%，到期一次性支付本息。
+        流动性强，增值稳健，调度灵。
+        有严格的风险管控制度来控制风险。。
+    </div>
+    <div style="border:1px #CCC dashed;margin-bottom:20px;"></div>
+    <div style="font-size:16px;color:#7bdcf6">起投金额</div>
+    <div style="padding:20px 40px;color:#6c6e6c">起投金额5万， 期限1-12个月， 预期7.8%年化收益率， 到期一次性支付全部本息</div>
+    </div>
+    
+    <div id="c6" style="padding:20px 40px;border:2px #d8d8d8 solid; border-top:0px;margin-bottom:40px;color:#000; display:none">
+    <div style="font-size:18px;color:#00a0e9">普惠系列<span style="font-size: 18px;">A</span></div>
+    <div style="padding:20px 40px;color:#6c6e6c">固定收益类 <span style="font-size: 18px;">8</span>%-<span style="font-size: 18px;">12</span>%</div>
+    <div style="border:1px #CCC dashed;margin-bottom:20px;"></div>
+    <div style="font-size:18px;color:#00a0e9;">普惠系列<span style="font-size: 18px;">B</span></div>
+    <div style="padding:20px 40px;color:#6c6e6c">固定加浮动收益类 <span style="font-size: 18px;">8</span>%-<span style="font-size: 18px;">18</span>%</div>
+    <div style="border:1px #CCC dashed;margin-bottom:20px;"></div>
+    <div style="font-size:18px;color:#00a0e9">普惠系列<span style="font-size: 18px;color: #007aff">C</span></div>
+    <div style="padding:20px 40px;color:#6c6e6c">浮动收益类 <span style="font-size: 18px;">20</span>%以上</div>
+    </div>
+
+        <tc_include file="Public:footer" />
+      
+</div>
+</body></html>
+
+<!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="__TMPL__Public/js/jquery.js"></script>
+    <script src="__TMPL__Public/js/wind.js"></script>
+    <script src="__TMPL__Public/js/bootstrap.min.js"></script>
+    <script src="__TMPL__Public/js/frontend.js"></script>
+	<script>
+	$(function(){
+		$('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });
+		
+		$("#main-menu li.dropdown").hover(function(){
+			$(this).addClass("open");
+		},function(){
+			$(this).removeClass("open");
+		});
+		
+		$("#fb1").mouseover(function(){
+			$(this).attr("src","__TMPL__Public/images/kxwz2.png");
+		}).mouseout(function(){
+			$(this).attr("src","__TMPL__Public/images/kxwz.png");
+		});
+		
+		$("#fb2").mouseover(function(){
+			$(this).attr("src","__TMPL__Public/images/cxwz2.png");
+		}).mouseout(function(){
+			$(this).attr("src","__TMPL__Public/images/cxwz.png");
+		});
+		;(function($){
+			$.fn.totop=function(opt){
+				var scrolling=false;
+				return this.each(function(){
+					var $this=$(this);
+					$(window).scroll(function(){
+						if(!scrolling){
+							var sd=$(window).scrollTop();
+							if(sd>100){
+								$this.fadeIn();
+							}else{
+								$this.fadeOut();
+							}
+						}
+					});
+					
+					$this.click(function(){
+						scrolling=true;
+						$('html, body').animate({
+							scrollTop : 0
+						}, 500,function(){
+							scrolling=false;
+							$this.fadeOut();
+						});
+					});
+				});
+			};
+		})(jQuery); 
+		
+		$("#backtotop").totop();
+		
+		
+	});
+	function change(num){
+		for(i=1;i<=6;i++){
+			if(i!=num) $("#c"+i).hide();
+			else $("#c"+i).show();
+		}
+	}
+	</script>
